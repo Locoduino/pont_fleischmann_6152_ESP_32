@@ -18,14 +18,11 @@ class Sensor {
   private:
     uint8_t                   m_inPin;
     volatile uint8_t          m_counter;
-    bool                      m_state;
 
   public:
     // Constructeur
     Sensor(const uint8_t);
-
     void init();
-    uint8_t read();
     void reset();
     void addCount();
     uint8_t getCount();
